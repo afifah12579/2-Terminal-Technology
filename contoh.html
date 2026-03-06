@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Details Overview</title>
+    <style>
+        body {
+            background-color: #f8fafc; /* Very light grey background */
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .contract-wrapper {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 column layout like your image */
+            gap: 24px;
+        }
+
+        /* The Card */
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+
+        /* Hover states to make it interactive */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #e2e8f0;
+        }
+
+        /* Icon/Picture Styling */
+        .icon-container {
+            background-color: #eff6ff; /* Light blue wash */
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            color: #3b82f6; /* Signature blue */
+        }
+
+        /* Title/Heading */
+        .card h3 {
+            color: #1e293b;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            letter-spacing: -0.025em;
+        }
+
+        /* Body/Detail Text */
+        .card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Responsive design for tablets and phones */
+        @media (max-width: 1024px) {
+            .contract-wrapper { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .contract-wrapper { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contract-wrapper">
+        
+        <div class="card">
+            <div class="icon-container">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h3>Legal Compliance</h3>
+            <p>Execution of all protocols follows international security standards, ensuring that data protection remains the foundation of our partnership.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-container">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3>Performance Specs</h3>
+            <p>Hardware stability and OS optimization are guaranteed within a 99.9% uptime margin, specifically focusing on thermal and registry efficiency.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-container">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3>Maintenance Term</h3>
+            <p>This contract includes a 12-month window for routine hardware checks and precision repairs to maintain peak operational health.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
